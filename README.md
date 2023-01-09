@@ -14,7 +14,7 @@ J. Angevaare <j.angevaare@nikhef.nl>
   - After that you can get started! As the name suggests **``00_getting_started``** is the place to be. There you'll find a notebook with essential information on how to get started (aptly called **`0. before_you_get_started`**). **Don't miss**:
     - the [instruction video](https://surfdrive.surf.nl/files/index.php/s/MXqaGok0vuMBzjb); and 
     - paper cited in that notebook!
-  - From thereon you can continue with the other notebooks that are numbered and we advice you to go through in ascending order.
+  - From thereon you can continue with the other notebooks that are numbered and we advise you to go through in ascending order.
 
 # Help I'm stuck; how to ask questions?
 Normally we'd be around for you to ask questions, but this is unfortunately not possible. This however shouldn't be a threshold for you to ask questions if you are stuck. You can either email the supervises as detailed above. We can also organize a zoom session whenever needed.
