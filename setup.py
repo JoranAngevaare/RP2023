@@ -12,8 +12,8 @@ with open('README.md') as file:
 with open('HISTORY.md') as file:
     history = file.read()
 
-setuptools.setup(name='RP2021',
-                 version='0.1.0',
+setuptools.setup(name='RP2023',
+                 version='0.1.1',
                  description='Research practicum 2023',
                  author='Joran Angevaare',
                  url='https://github.com/jorana/RP2023',
