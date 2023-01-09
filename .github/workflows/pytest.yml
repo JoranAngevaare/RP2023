@@ -46,6 +46,7 @@ jobs:
       - name: Test package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBA_DISABLE_JIT: 1
         run: |
           pytest --cov RP2023 -v -n auto --nbmake 0*/*.ipynb --durations 0 --nb-coverage
           coveralls --service=github
