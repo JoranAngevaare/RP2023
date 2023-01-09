@@ -21,7 +21,7 @@ Normally we'd be around for you to ask questions, but this is unfortunately not 
 
 # Downloading data
 Some of the folders require more data than we can upload to github. The supervisors will provide a link wherefrom students can download additional data. The link is:
-[](missing!), you can extract the files from there and move the extracted files to the datarepository. 
+[this link](https://surfdrive.surf.nl/files/index.php/s/OpzML4gcBmHI1SX), you can extract the files from there and move the extracted files to the datarepository. 
 
 # Structure of this package
 Below one can find a list of all the folders in this repository. Some of these folders are meant for the students (most of them actually) whereas some of the folders are meant for the supervisors in order to allow easy acces to the data.
