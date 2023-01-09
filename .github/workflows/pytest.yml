@@ -29,6 +29,16 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Checkout repo
         uses: actions/checkout@v3
+      - name: download data
+        run: |
+          sudo apt install zip   # Installs the zip package
+          sudo apt install unzip # Installs the unzip package
+          cd data
+          wget https://surfdrive.surf.nl/files/index.php/s/fxzID5cTQNatXzQ/download
+          mv download download.zip
+          unzip download.zip
+          mv download/* .
+          cd ..
       - name: Install requirements
         run: |
           pip install -r extra_requirements/requirements-tests.txt
@@ -37,9 +47,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          sudo apt install zip   # Installs the zip package
-          sudo apt install unzip # Installs the unzip package
-          cd data; wget https://surfdrive.surf.nl/files/index.php/s/fxzID5cTQNatXzQ/download download.zip; unzip download; mv download/* .; cd ..
           pytest --cov RP2023 -v -n auto --nbmake 0*/*.ipynb --durations 0 --nb-coverage
           coveralls --service=github
       - name: goodbye
