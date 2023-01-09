@@ -1,0 +1,44 @@
+name: Test package
+
+# Trigger this code when a new release is published
+on:
+  workflow_dispatch:
+  release:
+    types: [ created ]
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  update:
+    name: "${{ matrix.test }}_py${{ matrix.python-version }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: False
+      matrix:
+        python-version: [ "3.7", "3.8", "3.9", "3.10" ]
+        test: [ 'coveralls' ]
+    env:
+      NUMBA_DISABLE_JIT: 1
+    steps:
+      # Setup and installation
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Install requirements
+        run: |
+          pip install -r extra_requirements/requirements-tests.txt
+          python setup.py develop
+      - name: Test package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd data; wget https://surfdrive.surf.nl/files/index.php/s/OpzML4gcBmHI1SX; cd ..
+          pytest --cov RP2023 -v -n auto --nbmake 0*/*.ipynb --durations 0 --nb-coverage
+          coveralls --service=github
+      - name: goodbye
+        run: echo "tests done, bye bye"
