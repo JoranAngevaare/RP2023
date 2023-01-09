@@ -12,7 +12,7 @@ J. Angevaare <j.angevaare@nikhef.nl>
   - `git clone https://github.com/jorana/RP2023.git` on the command line if you are familiar with git, or alternatively, download ZIP (by clicking green 'Clone or download' button and selecting) and unzip.
   - We assume you have python 3 installed, preferably in an [Anaconda](https://anaconda.org/) environment. As a bare minimum you'll have to have jupyter installed.
   - After that you can get started! As the name suggests **``00_getting_started``** is the place to be. There you'll find a notebook with essential information on how to get started (aptly called **`0. before_you_get_started`**). **Don't miss**:
-    - the instruction video; and 
+    - the [instruction video](https://surfdrive.surf.nl/files/index.php/s/MXqaGok0vuMBzjb); and 
     - paper cited in that notebook!
   - From thereon you can continue with the other notebooks that are numbered and we advice you to go through in ascending order.
 
@@ -21,7 +21,7 @@ Normally we'd be around for you to ask questions, but this is unfortunately not 
 
 # Downloading data
 Some of the folders require more data than we can upload to github. The supervisors will provide a link wherefrom students can download additional data. The link is:
-[](missing!), you can extract the files from there and move the extracted files to the datarepository. 
+[this link](https://surfdrive.surf.nl/files/index.php/s/OpzML4gcBmHI1SX), you can extract the files from there and move the extracted files to the datarepository. 
 
 # Structure of this package
 Below one can find a list of all the folders in this repository. Some of these folders are meant for the students (most of them actually) whereas some of the folders are meant for the supervisors in order to allow easy acces to the data.
