@@ -18,3 +18,5 @@ pytest-forked==1.4.0
 pytest-runner==6.0.0
 pytest-xdist==3.0.2
 pytest_notebook==0.8.0
+nbconvert==7.2.3
+nbmake==1.2.1
