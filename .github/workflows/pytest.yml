@@ -30,6 +30,8 @@ jobs:
             os: ubuntu-latest
           - python-version: "3.6"
             os: windows-latest
+          - python-version: "3.9"
+            os: windows-latest
     runs-on: ${{ matrix.os }}
     env:
       NUMBA_DISABLE_JIT: 1
@@ -78,7 +80,6 @@ jobs:
         if: matrix.os == 'windows-latest'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUMBA_DISABLE_JIT: 1
         run: |
           pytest --cov RP2023 -v --nbmake "00_getting_started\\1. open_co60_file.ipynb" --durations 0 --nb-coverage --nbmake-timeout=3600 
           pytest --cov-append --cov RP2023 -v --nbmake "01_coincidence_measurements\\2. coincidence_matching_Co60.ipynb" --durations 0 --nb-coverage --nbmake-timeout=3600 
