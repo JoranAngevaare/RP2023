@@ -19,7 +19,7 @@ pytest-runner==6.0.0; python_version>'3.7'
 pytest-xdist==3.0.2; python_version>'3.7'
 pytest_notebook==0.8.0; python_version>'3.7'
 nbconvert==7.2.3; python_version>'3.7'
-nbmake==1.2.0; python_version>'3.7'
+nbmake==1.2.1; python_version>'3.7'
 
 jupyter==1.0.0; python_version<='3.7'
 jinja2==3.0; python_version<='3.7'
