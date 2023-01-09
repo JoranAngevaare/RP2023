@@ -1,4 +1,7 @@
 # RP2022/2023
+[![Coverage Status](https://coveralls.io/repos/github/JoranAngevaare/RP2023/badge.svg?branch=master)](https://coveralls.io/github/JoranAngevaare/RP2023?branch=master)
+[![Test package](https://github.com/JoranAngevaare/RP2023/actions/workflows/pytest.yml/badge.svg?branch=master)](https://github.com/JoranAngevaare/RP2023/actions/workflows/pytest.yml)
+
 Research Practicum 2023
 
 Bachelor Natuur- en Sterrenkunde (joint degree)
@@ -11,7 +14,7 @@ J. Angevaare <j.angevaare@nikhef.nl>
 # How to get started?
   - `git clone https://github.com/jorana/RP2023.git` on the command line if you are familiar with git, or alternatively, download ZIP (by clicking green 'Clone or download' button and selecting) and unzip.
   - We assume you have python 3 installed, preferably in an [Anaconda](https://anaconda.org/) environment. As a bare minimum you'll have to have jupyter installed.
-  - After that you can get started! As the name suggests **``00_getting_started``** is the place to be. There you'll find a notebook with essential information on how to get started (aptly called **`0. before_you_get_started`**). **Don't miss**:
+  - After that you can get started! As the name suggests **``00_getting_sta:qrted``** is the place to be. There you'll find a notebook with essential information on how to get started (aptly called **`0. before_you_get_started`**). **Don't miss**:
     - the [instruction video](https://surfdrive.surf.nl/files/index.php/s/MXqaGok0vuMBzjb); and 
     - paper cited in that notebook!
   - From thereon you can continue with the other notebooks that are numbered and we advise you to go through in ascending order.
