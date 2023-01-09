@@ -37,7 +37,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd data; wget https://surfdrive.surf.nl/files/index.php/s/OpzML4gcBmHI1SX/download; mv download/* .; cd ..
+          sudo apt install zip   # Installs the zip package
+          sudo apt install unzip # Installs the unzip package
+          cd data; wget https://surfdrive.surf.nl/files/index.php/s/fxzID5cTQNatXzQ/download download.zip; unzip download; mv download/* .; cd ..
           pytest --cov RP2023 -v -n auto --nbmake 0*/*.ipynb --durations 0 --nb-coverage
           coveralls --service=github
       - name: goodbye
