@@ -12,13 +12,20 @@ on:
 
 jobs:
   update:
-    name: "${matrix.os} ${{ matrix.test }}_py${{ matrix.python-version }}"
+    name: "${{matrix.os}} ${{ matrix.test }}_py${{ matrix.python-version }}"
     strategy:
       fail-fast: False
       matrix:
         python-version: [ "3.7", "3.8", "3.9", "3.10" ]
         os: [ubuntu-latest, windows-latest, ubuntu-20.04]
         test: [ 'coveralls' ]
+        exclude:
+          - python-version: "3.10"
+            os: ubuntu-20.04
+          - python-version: "3.9"
+            os: ubuntu-20.04
+          - python-version: "3.8"
+            os: ubuntu-20.04
     runs-on: ${{ matrix.os }}
     env:
       NUMBA_DISABLE_JIT: 1
@@ -31,14 +38,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: download data
+        if: matrix.os != 'windows-latest'
         run: |
-          sudo apt install zip   # Installs the zip package
           sudo apt install unzip # Installs the unzip package
           cd data
           wget https://surfdrive.surf.nl/files/index.php/s/rL452j1tsQyHc7w/download
           mv download download.zip
           unzip download.zip
           mv 2023_01_09_rp2023/* .
+          cd ..
+      - name: download data
+        if: matrix.os == 'windows-latest'
+        run: |
+          cd data
+          curl --url https://surfdrive.surf.nl/files/index.php/s/rL452j1tsQyHc7w/download --output download.zip
+          tar -xf download.zip
+          move 2023_01_09_rp2023/co60 .
+          move 2023_01_09_rp2023/temperature .
+          move 2023_01_09_rp2023/ti44 .
           cd ..
       - name: Install requirements
         run: |
