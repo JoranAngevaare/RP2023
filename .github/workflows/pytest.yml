@@ -13,11 +13,11 @@ on:
 jobs:
   update:
     name: "${{ matrix.test }}_py${{ matrix.python-version }}"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: False
       matrix:
-        python-version: [ "3.6", "3.7", "3.8", "3.9", "3.10" ]
+        python-version: [ "3.7", "3.8", "3.9", "3.10" ]
         test: [ 'coveralls' ]
     env:
       NUMBA_DISABLE_JIT: 1
