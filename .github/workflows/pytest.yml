@@ -37,7 +37,6 @@ jobs:
           wget https://surfdrive.surf.nl/files/index.php/s/fxzID5cTQNatXzQ/download
           mv download download.zip
           unzip download.zip
-          mv download/* .
           cd ..
       - name: Install requirements
         run: |
