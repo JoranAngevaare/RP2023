@@ -34,7 +34,7 @@ jobs:
           sudo apt install zip   # Installs the zip package
           sudo apt install unzip # Installs the unzip package
           cd data
-          wget https://surfdrive.surf.nl/files/index.php/s/rL452j1tsQyHc7w
+          wget https://surfdrive.surf.nl/files/index.php/s/rL452j1tsQyHc7w/download
           mv download download.zip
           unzip download.zip
           mv 2023_01_09_rp2023/* .
