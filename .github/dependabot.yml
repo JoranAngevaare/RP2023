@@ -14,8 +14,8 @@ updates:
     directory: "/extra_requirements"
     schedule:
       # Check for updates to requirements every week
-      interval: "monthly"
+      interval: "daily"
     # Raise pull requests for version updates
     # to pip against the `develop` branch
     target-branch: "master"
-    open-pull-requests-limit: 15
+    open-pull-requests-limit: 150
