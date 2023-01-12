@@ -14,7 +14,7 @@ updates:
     directory: "/extra_requirements"
     schedule:
       # Check for updates to requirements every week
-      interval: "daily"
+      interval: "monthly"
     # Raise pull requests for version updates
     # to pip against the `develop` branch
     target-branch: "master"
