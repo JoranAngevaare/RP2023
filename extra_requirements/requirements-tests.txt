@@ -10,7 +10,7 @@ uproot3==3.14.4
 scipy==1.10.1
 pyarrow==14.0.1
 fastparquet==2022.12.0
-awkward==2.0.5
+awkward==2.5.2
 tqdm==4.65.0
 pytest==7.2.0
 pytest-cov==4.0.0
