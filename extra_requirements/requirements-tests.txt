@@ -1,7 +1,7 @@
 coverage==6.5.0
 coveralls==3.3.1
 jupyter==1.0.0
-numba==0.56.4
+numba==0.59.1
 numpy==1.22.4
 matplotlib==3.7.1
 pandas==1.5.2
