@@ -1,4 +1,11 @@
 # RP2022/2023
+[![status: archive](https://github.com/GIScience/badges/raw/master/status/archive.svg)](https://github.com/GIScience/badges#archive)
+
+This package has been archived.
+
+--------------
+
+
 [![Coverage Status](https://coveralls.io/repos/github/JoranAngevaare/RP2023/badge.svg?branch=master)](https://coveralls.io/github/JoranAngevaare/RP2023?branch=master)
 [![Test package](https://github.com/JoranAngevaare/RP2023/actions/workflows/pytest.yml/badge.svg?branch=master)](https://github.com/JoranAngevaare/RP2023/actions/workflows/pytest.yml)
 [![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](https://www.repostatus.org/badges/latest/abandoned.svg)](https://www.repostatus.org/#abandoned)
